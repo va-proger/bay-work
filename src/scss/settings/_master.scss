@@ -9,14 +9,28 @@ html{
     font-size: var(--main-font-size);
 }
 body {
+    background-color: #E5E5E5;
+    background-image: url(../img/top-bg.png);
+    background-size: 100% 880px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
     margin: 0;
     font-family: var(--main-font-family), sans-serif;
     color: var(--main-color-black);
     font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 ul, li, ol{
     padding: 0;
     margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
 }
 a{
     margin: 0;
@@ -28,4 +42,96 @@ a{
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+.btn{
+    min-width: 147px;
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__default{
+        background: #FFCC80;
+        
+        &-icon{
+            gap: 15px;
+            &-23 svg{
+                max-width: 23px;
+                max-height: 23px;
+                height: 23px;
+                width: 23px;
+                path{
+                    max-width: 23px;
+                    max-height: 23px;
+                }
+            }
+            &-23 i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 23px;
+                max-height: 23px;
+                max-width: 23px;
+                height: 23px;
+                width: 23px;
+            }
+            &-23 img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-height: 23px;
+                max-width: 23px;
+                max-height: 23px;
+                max-width: 23px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+svg.decor{
+    &__bg-obj{
+        &-1{
+            position: absolute;
+            top: -234px;
+            right: 1743px;
+            z-index: -1;
+            transform: translateX(100%);
+        }
+        &-2{
+            position: absolute;
+            top: -75px;
+            right: 1865px;
+            z-index: -1;
+            transform: translateX(100%);
+        }
+        &-3{
+            position: absolute;
+            top: 646px;
+            right: 1686px;
+            z-index: -1;
+            // transform: translateX(100%);
+        }
+    }
+}
+.wrapper{
+    
+    min-height: 100%;
+    overflow: hidden;
+}
+.bold{
+    font-weight: 700;
+}
+.line{
+    background: var(--main-orange);
+    border-radius: 11px;
+    width: 74px;
+    height: 6px;
+}
+.title-main{
+    margin-bottom: 23px;
+    color: var(--main-black);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
 }
